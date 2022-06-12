@@ -85,7 +85,7 @@ export const textHydrator = hyclass({
 ```
 **YourComponent.js**
 ```js
-import { textVariants, btnVariants } from './hydrators';
+import { textHydrator, btnHydrator } from './hydrators';
 
 export default function YourComponent = () => {
   return <div>
