@@ -1,0 +1,31 @@
+{
+  "name": "hyclass",
+  "version": "0.0.0",
+  "author": "",
+  "license": "MIT",
+  "repository": "dasveloper/hyclass",
+  "description": "A tiny (162b gzip) utility for hydrating className strings.",
+  "module": "dist/hyclass.m.js",
+  "unpkg": "dist/hyclass.min.js",
+  "main": "dist/hyclass.js",
+  "scripts": {
+    "build": "bundt",
+    "pretest": "npm run build",
+    "test": "tape -r esm tests/*.js | tap-spec",
+    "release": "npm run build && npm publish --access=public"
+  },
+  "keywords": [
+    "classes",
+    "classname",
+    "classnames"
+  ],
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "bundt": "^1.1.5",
+    "esm": "3.2.25",
+    "tap-spec": "5.0.0",
+    "tape": "^5.5.3"
+  }
+}
